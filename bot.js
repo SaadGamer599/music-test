@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "->" 
+const prefix = "&" 
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -223,8 +223,8 @@ function play(guild, song) {
     serverQueue.textChannel.send(`Starting The Song : **${song.title}**`);
 }
  
-const adminprefix = "->vip";
-const devs = ['429972030092476437'];
+const adminprefix = "&";
+const devs = ['454441083758182400'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
